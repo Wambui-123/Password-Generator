@@ -1,35 +1,47 @@
+from collections import UserList
 from password_generator import PasswordGenerator
+import random
+
 pwo = PasswordGenerator()
-pwo.minlen = 6
-pwo.maxlen = 12
 pwo.generate()
-
-
+pwo.minlen = 6
+pwo.maxlen = 12 
 
 class User :
-    accout_info = []
-    
+    	
     def __init__(self,username,generate,password,length):
         self.username = username
         self.generate = generate
         self.password = password
         self.length = length
-        
-        
+               
 username = input("Enter Your Username: ")
 generate = (pwo.generate())
-print("Suggested password: " + generate) 
-password = input("Enter in your password: " )
-length= int(len(password))
-print("Your password contains: " + str(length) + " characters")
+print("Suggested password: " + generate)
+print("Would you want to use this suggested password? " +'\n' "Type 'Yes' or 'No'" ) 
 
-if len(password) == pwo.minlen:
-   print('Valid password') 
-else:
-    print('Invalid password, password must atleast contain six characters') 
+
+chosen_element= input()
+if str(chosen_element) == 'Yes':
+    print(username + " your password is: " + generate)
+elif str(chosen_element) == 'No':
+    password = input("Enter in your password: " )
+    if len(password) < pwo.minlen:
+        print('Invalid password, password must atleast contain six characters') 
+        length= int(len(password))
+        print("Your password contains: " + str(length) + " characters " + '\n') 
+        print("Type another password")
+        password = input("Enter in your password: " )
+    else: 
+     print(username + " your have successfully logged in.")
+    print("Your password is " + password)        
     
-f = open('user.txt', 'w')
-f.write("Account Details \n")
-f.write("Username: " + username + '\n')
-f.write("Password: " + password + '\n')     
+    
+def main(): 
+        f = open('user.txt', 'a')
+        f.write("Account Details " + '\n')
+        f.write("Username: " + username + '\n')
+        f.write("Password: " + password + '\n')  
+        f.close()   
+        main()    
 
