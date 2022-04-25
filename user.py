@@ -18,20 +18,23 @@ elif short_code == 'li':
 user = input('Enter Username - ').strip()
 password = str(input('Enter your password - '))
 # user_exists = (user, password)     
-if user == User.username:
+if user == ("Yvonne"):
         print(f'Welcome {user}. Please choose an option to continue.')
         print(' ')
 else: 
     print(f'You do not have an account' "\n" 'Please Sign Up') 
-    print('Use these codes to navigate: \n sp-Sign Up \n li-Log In \n ex-Exit')
-# while True:
-print("-"*60)
-print('Navigation codes: \n cc-Create a Credential \n dc-Display Credentials \n copy-Copy Password \n ex-Exit')
-short_code = input('Enter a choice: ').lower().strip()
-print("-"*60)
-if short_code == 'ex':
-    print(" ")
-    print(f'Goodbye {user}')
+#     print('Use these codes to navigate: \n sp-Sign Up \n li-Log In \n ex-Exit')
+# # while True:
+# print("-"*60)
+# print('Navigation codes: \n cc-Create a Credential \n dc-Display Credentials \n copy-Copy Password \n ex-Exit')
+# short_code = input('Enter a choice: ').lower().strip()
+# print("-"*60)
+# if short_code == 'ex':
+#     print(" ")
+#     print(f'Goodbye {user}')
+    
+if __name__ == '__main__':
+	main()    
 
 # break
 # elif short_code == 'cc':
@@ -95,5 +98,3 @@ if short_code == 'ex':
 
 
 
-if __name__ == '__main__':
-	main()
