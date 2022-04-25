@@ -1,6 +1,4 @@
-from credentials import Credential
 from credentials import Users
-
 
 def main():
     print(' ')
@@ -9,7 +7,7 @@ print('Hello! Welcome to Password Locker.')
 print('Use these codes to navigate: \n sp-Sign Up \n li-Log In \n ex-Exit')
 short_code = input('Enter a choice: ').lower().strip()
 if short_code == 'ex': 
-    exit()
+    exit()      
 elif short_code == 'sp':
 			# print('To create a new account:')
                 from run import User
@@ -19,8 +17,8 @@ elif short_code == 'li':
 			print('To login, enter your account details:')
 user = input('Enter Username - ').strip()
 password = str(input('Enter your password - '))
-user_exists = (user,password)     
-if user_exists == user:
+# user_exists = (user, password)     
+if user == User.username:
         print(f'Welcome {user}. Please choose an option to continue.')
         print(' ')
 else: 
@@ -34,8 +32,6 @@ print("-"*60)
 if short_code == 'ex':
     print(" ")
     print(f'Goodbye {user}')
-from run import User
-
 
 # break
 # elif short_code == 'cc':
