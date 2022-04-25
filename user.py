@@ -1,5 +1,5 @@
 from credentials import Credential
-from credentials import User
+from credentials import Users
 
 
 def main():
@@ -17,7 +17,7 @@ elif short_code == 'sp':
 elif short_code == 'li':
 			print(' ')
 			print('To login, enter your account details:')
-user = input('Enter your first name - ').strip()
+user = input('Enter Username - ').strip()
 password = str(input('Enter your password - '))
 user_exists = (user,password)     
 if user_exists == user:
