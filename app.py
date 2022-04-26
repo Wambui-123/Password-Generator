@@ -44,6 +44,7 @@ the generated password, they can entered their own desired password
 def create_user():
     print('\nTo signup, enter a username and password:')
     username = input("Enter a username: ")
+
     password = Password(8)
     generated_password = password.generate()
 
@@ -79,7 +80,7 @@ def login_user():
         for DB_credentials in f:
             if DB_credentials == passed_in_credentials or DB_credentials == passed_in_credentials_alt:
                 return print("Successfully logged in")
-            
+
         print("\nUser doesn't exist")
         create_user()
 
@@ -93,12 +94,11 @@ def view_credentials():
         print("\nThese are all your saved credentials!")
         for DB_credentials in f:
             crendential = DB_credentials.split(",")
-            print("Username: {username}, Password: {password}". format(
-                username=crendential[0], password=crendential[1]))
+        print("Username: {username}, Password: {password}". format(
+        username=crendential[0], password=crendential[1]))
 
 
 def main():
-    print("*" * 80)
     print('Hello! Welcome to Password Locker.')
     print('Use these codes to navigate: \n 1 ==> Sign Up \n 2 ==> Log In \n 3 ==> Exit \n 4 ==> Show saved credentials')
 
