@@ -1,5 +1,4 @@
 from credentials import Users
-
 def main():
     print(' ')
 print('Hello! Welcome to Password Locker.')
@@ -18,7 +17,7 @@ elif short_code == 'li':
 user = input('Enter Username - ').strip()
 password = str(input('Enter your password - '))
 # user_exists = (user, password)     
-if user == ("Yvonne"):
+if user == (Users):
         print(f'Welcome {user}. Please choose an option to continue.')
         print(' ')
 else: 
