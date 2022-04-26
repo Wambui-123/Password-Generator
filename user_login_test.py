@@ -12,17 +12,16 @@ class TestUser(unittest.TestCase):
         '''
         Method run before each test to build a start
         '''
-        self.new_user = User("Gatoto", "Adrian", "shaban", "gatotoadrian@gmail.com", "123qwerty")
+        self.new_user = User("Yvonne", "Muthui", "yvonnewambui28@gmail.com", "123qwerty")
 
     def test__init__(self):
         '''
         test initialization to test object instantiation
         '''
 
-        self.assertEqual(self.new_user.first_name, "Gatoto")
-        self.assertEqual(self.new_user.sur_name, "Adrian")
-        self.assertEqual(self.new_user.user_name, "shaban")
-        self.assertEqual(self.new_user.email, "gatotoadrian@gmail.com")
+        self.assertEqual(self.new_user.first_name, "Yvonne")
+        self.assertEqual(self.new_user.user_name, "MUthui")
+        self.assertEqual(self.new_user.email, "yvonnemuthui28@gmail.com")
         self.assertEqual(self.new_user.password, "123qwerty")
 
 
