@@ -18,7 +18,7 @@ Python 3.6
 Contact: yvonnewambui28@gmail.com
 
 ## License
-MIT
+The project is under MIT license Copyright © 2022.All rigths reserved
 
 
 
