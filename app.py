@@ -99,6 +99,7 @@ def view_credentials():
 
 
 def main():
+    print("*" * 80)
     print('Hello! Welcome to Password Locker.')
     print('Use these codes to navigate: \n 1 ==> Sign Up \n 2 ==> Log In \n 3 ==> Exit \n 4 ==> Show saved credentials')
 
