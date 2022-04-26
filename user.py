@@ -1,4 +1,6 @@
 from credentials import Users
+from run import User
+
 def main():
     print(' ')
 print('Hello! Welcome to Password Locker.')
@@ -9,8 +11,8 @@ if short_code == 'ex':
     exit()      
 elif short_code == 'sp':
 			# print('To create a new account:')
-                from run import User
-                print(" ")
+            from run import User
+            print(" ")
 elif short_code == 'li':
 			print(' ')
 			print('To login, enter your account details:')
