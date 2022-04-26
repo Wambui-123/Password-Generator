@@ -9,7 +9,6 @@ class TestUser(unittest.TestCase):
         unittest.TestCase: TestCase class creates test cases 
     '''
 
-
     def setUp(self):
         '''
         Method run before each test to build a start
