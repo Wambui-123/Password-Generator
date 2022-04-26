@@ -20,7 +20,7 @@ class TestUser(unittest.TestCase):
         '''
 
         self.assertEqual(self.new_user.first_name, "Yvonne")
-        self.assertEqual(self.new_user.user_name, "MUthui")
+        self.assertEqual(self.new_user.user_name, "Muthui")
         self.assertEqual(self.new_user.email, "yvonnemuthui28@gmail.com")
         self.assertEqual(self.new_user.password, "123qwerty")
 
