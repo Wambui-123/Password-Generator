@@ -4,7 +4,7 @@
 Yvonne Wambui Muthui
 
 ## Description 
-A python application that lets us mananage our information by generate, save and delete credientials such as passwords and usernames.
+A python application called Python vault that lets us mananage our information by generate, save and delete credientials such as passwords and usernames.
 
 ## SetUp
 - Clone the Repo
