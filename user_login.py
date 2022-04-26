@@ -16,7 +16,6 @@ class User:
             password: New user account password.
         '''
 
-
         self.first_name = first_name
         self.sur_name = sur_name
         self.user_name = user_name
